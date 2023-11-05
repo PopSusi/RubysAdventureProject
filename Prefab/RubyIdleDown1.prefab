@@ -102,7 +102,8 @@ MonoBehaviour:
   walkSpeed: 3
   speed: 0
   runSpeed: 0
-  maxHealth: 0
+  maxHealth: 5
+  bufferTime: 2
 --- !u!50 &3921999620513578053
 Rigidbody2D:
   serializedVersion: 4

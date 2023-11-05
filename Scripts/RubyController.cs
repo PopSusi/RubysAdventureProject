@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    public GameObject projectilePrefab;
+
     // Start is called before the first frame update
     public float walkSpeed;
     public float speed;
@@ -17,13 +19,19 @@ public class RubyController : MonoBehaviour
     int curHealth;
     
     public float bufferTime = 2.0f;
-    bool isBuffer;
+    bool isBuffer = false;
     float bufferTimer;
+
+    Animator animator;
+    Vector2 lookDirection = new Vector2(1,0);
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
+
         speed = walkSpeed;
         curHealth = maxHealth;
     }
@@ -33,11 +41,25 @@ public class RubyController : MonoBehaviour
     {
         horDir = Input.GetAxis("Horizontal");
         verDir = Input.GetAxis("Vertical");
-
+        Vector2 move = new Vector2(horDir, verDir);
+        
+        if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
         if(isBuffer){
             bufferTimer -= Time.deltaTime;
             if(bufferTimer < 0)
                 isBuffer = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
         }
     }
     void FixedUpdate(){
@@ -54,7 +76,17 @@ public class RubyController : MonoBehaviour
             curHealth += amnt;
             isBuffer = true;
             bufferTimer = bufferTime;
+            animator.SetTrigger("Hit");
         }
         curHealth = Mathf.Clamp(curHealth + amnt, 0, maxHealth);
+    }
+    
+    void Launch(){
+        GameObject projectileObject = Instantiate(projectilePrefab,rb2d.position + Vector2.up * .5f, Quaternion.identity);
+        
+        CogBullet projectile = projectileObject.GetComponent<CogBullet>();
+        projectile.Launch(lookDirection, 300);
+        Debug.Log("Dir " + lookDirection);
+        animator.SetTrigger("Launch");
     }
 }

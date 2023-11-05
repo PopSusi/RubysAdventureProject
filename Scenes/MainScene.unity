@@ -3914,6 +3914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RubyIdleDown1
       objectReference: {fileID: 0}
+    - target: {fileID: 3921999620513578049, guid: 44796309efe439d4a86e40c1759c43a5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3921999620513578054, guid: 44796309efe439d4a86e40c1759c43a5, type: 3}
       propertyPath: runSpeed
       value: 5
@@ -3922,6 +3926,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3921999620513578054, guid: 44796309efe439d4a86e40c1759c43a5, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 7425421107724750285, guid: 47f941db30e5eae40ae3ca27c0bc4f18, type: 3}
     - target: {fileID: 3921999620513578055, guid: 44796309efe439d4a86e40c1759c43a5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4040,8 +4048,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4661390674504002933, guid: a40380dd407260041bdd33e3d554ebfa, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5910214
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661390674504002933, guid: a40380dd407260041bdd33e3d554ebfa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2955107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661390674504002933, guid: a40380dd407260041bdd33e3d554ebfa, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8960060853672589066, guid: a40380dd407260041bdd33e3d554ebfa, type: 3}
       propertyPath: m_Constraints
