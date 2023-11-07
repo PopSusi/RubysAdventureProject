@@ -99,6 +99,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -301,6 +302,8 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.SpriteShape.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.Tilemap.Extras.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Burst.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InputSystem.ForUI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll"
@@ -318,8 +321,10 @@
 "Assets/Scripts/CogBullet.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/HealthCollect.cs"
+"Assets/Scripts/NPC.cs"
 "Assets/Scripts/RubyController.cs"
 "Assets/Scripts/SpikesDamage.cs"
+"Assets/Scripts/UIHealthBar.cs"
 -langversion:9.0
 
 /deterministic
