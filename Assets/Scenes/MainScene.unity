@@ -12870,6 +12870,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1696154463594982391, guid: cb6559fbc7cf7794682122cfba7e3dc4, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696154463594982391, guid: cb6559fbc7cf7794682122cfba7e3dc4, type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
