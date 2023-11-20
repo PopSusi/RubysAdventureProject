@@ -8,9 +8,6 @@ public class SpikesDamage : MonoBehaviour
     {
         RubyController controller = other.GetComponent<RubyController >();
 
-        if (controller != null)
-        {
-            controller.ChangeHealth(-1);
-        }
+        if (controller != null) controller.HealthUpdate(-1);
     }
 }

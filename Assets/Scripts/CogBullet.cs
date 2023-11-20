@@ -14,9 +14,7 @@ public class CogBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.magnitude > 1000f){
-            Destroy(gameObject);
-        }
+        if(transform.position.magnitude > 1000f) Destroy(gameObject); //Destroy if too far
     }
 
     public void Launch(Vector2 direction, float force){
@@ -24,10 +22,8 @@ public class CogBullet : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D other){
-        EnemyController e = other.collider.GetComponent<EnemyController>();
-        if(e != null){
-            e.Fix();
-        }
+        EnemyController enemy = other.collider.GetComponent<EnemyController>();
+        if(enemy != null) enemy.HealthUpdate(-1); //Damage if Enemy
         Destroy(gameObject);
     }
 }

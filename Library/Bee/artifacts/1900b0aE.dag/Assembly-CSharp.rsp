@@ -382,6 +382,8 @@
 "Assets/Scripts/CogBullet.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/HealthCollect.cs"
+"Assets/Scripts/ILiving.cs"
+"Assets/Scripts/JustTesting.cs"
 "Assets/Scripts/NPC.cs"
 "Assets/Scripts/RubyController.cs"
 "Assets/Scripts/SpikesDamage.cs"

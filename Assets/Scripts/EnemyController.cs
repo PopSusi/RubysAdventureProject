@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IDamageable<int>
 {
-    public float speed;
-    public bool vertical;
-    public float changeTime = 3.0f;
+    public static float speed {get;} = 1;
+    [SerializeField] bool vertical;
+    [SerializeField] float changeTime = 3.0f;
 
     bool broken = true;
 
@@ -52,19 +52,13 @@ public class EnemyController : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(!broken)
-        {
-            return;
-        }
+        if (!broken) return;
         Vector2 position = rigidbody2D.position;
         
-        if (vertical)
-        {
-            position.y = position.y + Time.deltaTime * speed * direction;;
-        }
-        else
-        {
-            position.x = position.x + Time.deltaTime * speed * direction;;
+        if (vertical) {
+            position.y = position.y + Time.deltaTime * speed * direction;
+        } else {
+            position.x = position.x + Time.deltaTime * speed * direction;
         }
         
         rigidbody2D.MovePosition(position);
@@ -73,13 +67,10 @@ public class EnemyController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         RubyController player = other.gameObject.GetComponent<RubyController>();
-        if (player != null)
-        {
-            player.ChangeHealth(-1);
-        }
+        if (player != null) player.HealthUpdate(-1); //Hit Player
     }
 
-    public void Fix(){
+    public void HealthUpdate(int amnt){
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");

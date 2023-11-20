@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RubyController : MonoBehaviour
+public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
 {
     public GameObject projectilePrefab;
 
@@ -65,7 +65,6 @@ public class RubyController : MonoBehaviour
             if(!footSource.isPlaying){
                 footSource.Play();
             }
-            Debug.Log(move.magnitude);
         } else{
             footSource.Stop();
         }
@@ -76,12 +75,13 @@ public class RubyController : MonoBehaviour
             Launch();
             PlaySound(throwClip);
         }
-        if(Input.GetKeyDown(KeyCode.X)){
+        if(Input.GetKeyDown(KeyCode.X))
+        {
             RaycastHit2D hit = Physics2D.Raycast(rb2d.position + Vector2.up * .2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
             if (hit.collider != null){
-                NPC chara = hit.collider.GetComponent<NPC>();
-                if (chara != null){
-                    chara.DisplayDialogue();
+                var objInt = hit.collider.GetComponent<IInteractable>();
+                if (objInt != null){
+                    objInt.Interact();
                 }
             }
         }
@@ -92,21 +92,22 @@ public class RubyController : MonoBehaviour
         position.y = position.y + speed * verDir * Time.deltaTime;
         rb2d.MovePosition(position);
     }
-    public void ChangeHealth(int amnt){
-    Debug.Log("Damage: " + amnt);
+    public void HealthUpdate(int amnt){
         if(amnt < 0){
-            if (isBuffer){
-                return;
-            }
+            if (isBuffer) return;
+            
             isBuffer = true;
             bufferTimer = bufferTime;
             animator.SetTrigger("Hit");
-            Debug.Log("Health: " + curHealth);
             PlaySound(hitClip);
         }
         curHealth = Mathf.Clamp(curHealth + amnt, 0, maxHealth);
         UIHealthBar.instance.SetValue(curHealth / (float) maxHealth);
-        Debug.Log("Health: " + curHealth);
+        if (health <= 0) Dies(); //Kills if under 5
+    }
+
+    public void Dies(){
+        Debug.Log("bye bye");
     }
     
     void Launch(){
@@ -114,10 +115,10 @@ public class RubyController : MonoBehaviour
         
         CogBullet projectile = projectileObject.GetComponent<CogBullet>();
         projectile.Launch(lookDirection, 300);
-        Debug.Log("Dir " + lookDirection);
         animator.SetTrigger("Launch");
     }
     public void PlaySound(AudioClip clip){
         audioSource.PlayOneShot(clip);
     }
+    
 }

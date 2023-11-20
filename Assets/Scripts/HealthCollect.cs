@@ -9,7 +9,7 @@ public class HealthCollect : MonoBehaviour
         RubyController controller = other.GetComponent<RubyController>();
 
         if (controller != null && controller.health < controller.maxHealth){
-            controller.ChangeHealth(1);
+            controller.HealthUpdate(1);
             Destroy(gameObject);
             controller.PlaySound(collectClip);
         }
