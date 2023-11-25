@@ -43,14 +43,18 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\RubyController.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
      <Compile Include="Assets\Scripts\CogBullet.cs" />
      <Compile Include="Assets\Scripts\SpikesDamage.cs" />
      <Compile Include="Assets\Scripts\HealthCollect.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
      <Compile Include="Assets\Scripts\Jambi.cs" />
      <Compile Include="Assets\Scripts\UIHealthBar.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Mission1Objective.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\ILevelManager.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

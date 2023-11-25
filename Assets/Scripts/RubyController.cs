@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
 {
@@ -28,11 +30,13 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
     public AudioClip throwClip;
     public AudioSource footSource;
     Vector2 lookDirection = new Vector2(1,0);
+    private GameManager gameManager;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        gameManager = GameManager.instance;
 
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
@@ -69,7 +73,6 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
             footSource.Stop();
         }
         
-
         if(Input.GetKeyDown(KeyCode.C))
         {
             Launch();
@@ -83,6 +86,22 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
                 if (objInt != null){
                     objInt.Interact();
                 }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.R) && (gameManager.lostOpen || gameManager.levelWin))
+        {
+            SceneManager.LoadScene("MainScene");
+            Time.timeScale = 1;
+        }
+        
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (!gameManager.pauseOpen)
+            {
+                gameManager.Pause();
+            } else if (gameManager.pauseOpen)
+            {
+                gameManager.Continue();
             }
         }
     }
@@ -106,8 +125,9 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
         if (health <= 0) Dies(); //Kills if under 5
     }
 
-    public void Dies(){
-        Debug.Log("bye bye");
+    public void Dies()
+    {
+        GameManager.instance.Lost();
     }
     
     void Launch(){

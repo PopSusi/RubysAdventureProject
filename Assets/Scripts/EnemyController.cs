@@ -71,6 +71,10 @@ public class EnemyController : MonoBehaviour, IDamageable<int>
     }
 
     public void HealthUpdate(int amnt){
+        if (broken)
+        {
+            GameManager.instance.UpdateObjective();
+        }
         broken = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");
