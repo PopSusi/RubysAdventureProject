@@ -21,6 +21,8 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
     int curHealth;
     
     public float bufferTime = 2.0f;
+    public ParticleSystem HealthHeart;
+    public ParticleSystem Damage;
     public bool isBuffer = false;
     float bufferTimer;
 
@@ -118,8 +120,15 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
             isBuffer = true;
             bufferTimer = bufferTime;
             animator.SetTrigger("Hit");
+            Instantiate(Damage, rb2d.position + Vector2.up * 0.5f, Quaternion.identity);
             PlaySound(hitClip);
+            Damage.Play();
         }
+        else if (amnt > 0)
+        {
+            Instantiate(HealthHeart, rb2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            HealthHeart.Play();
+        } 
         curHealth = Mathf.Clamp(curHealth + amnt, 0, maxHealth);
         UIHealthBar.instance.SetValue(curHealth / (float) maxHealth);
         if (health <= 0) Dies(); //Kills if under 5

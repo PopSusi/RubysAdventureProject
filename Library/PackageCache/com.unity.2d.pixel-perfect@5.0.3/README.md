@@ -1,5 +1,3 @@
-# 2D Pixel Perfect
-Quick start guide:
-1. Add *Pixel Perfect Camera* component to your main camera.
-2. Set *Assets Pixels Per Unit* and *Reference Resolution*.
-3. Enter Play Mode and see the result.
+version https://git-lfs.github.com/spec/v1
+oid sha256:9bb725028cf00f5586e68913c5c87f11e36877e968b262a4e5410a342043a090
+size 198
