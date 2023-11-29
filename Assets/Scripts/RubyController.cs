@@ -32,13 +32,11 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
     public AudioClip throwClip;
     public AudioSource footSource;
     Vector2 lookDirection = new Vector2(1,0);
-    private GameManager gameManager;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        gameManager = GameManager.instance;
 
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
@@ -90,7 +88,7 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.R) && (gameManager.lostOpen || gameManager.levelWin))
+        if (Input.GetKeyDown(KeyCode.R) && (GameManager.instance.lostOpen || GameManager.instance.levelWin))
         {
             SceneManager.LoadScene("MainScene");
             Time.timeScale = 1;
@@ -98,14 +96,15 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
         
         if (Input.GetButtonDown("Cancel"))
         {
-            if (!gameManager.pauseOpen)
+            if (!GameManager.instance.pauseOpen)
             {
-                gameManager.Pause();
-            } else if (gameManager.pauseOpen)
+                GameManager.instance.Pause();
+            } else if (GameManager.instance.pauseOpen)
             {
-                gameManager.Continue();
+                GameManager.instance.Continue();
             }
         }
+        
     }
     void FixedUpdate(){
         Vector2 position = rb2d.position;
