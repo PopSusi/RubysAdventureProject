@@ -1,0 +1,513 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.30f1 (b4360d7cdac4) revision 11810317'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ja' Physical Memory: 81843 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/susib/Documents/School/GameEngines/RubysAdventure/RubysAdventure
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55199
+Successfully changed project path to: C:/Users/susib/Documents/School/GameEngines/RubysAdventure/RubysAdventure
+C:/Users/susib/Documents/School/GameEngines/RubysAdventure/RubysAdventure
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10980] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 840614467 [EditorId] 840614467 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SUSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10980] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 840614467 [EditorId] 840614467 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SUSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 99.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.30f1 (b4360d7cdac4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/susib/Documents/School/GameEngines/RubysAdventure/RubysAdventure/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009228 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 105.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.570 seconds
+Domain Reload Profiling:
+	ReloadAssembly (570ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (401ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (80ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009146 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 98.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.582 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1582ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1367ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (925ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (621ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5832 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (0.8 MB). Loaded Objects now: 6287.
+Memory consumption went from 228.4 MB to 227.6 MB.
+Total: 4.852300 ms (FindLiveObjects: 0.573800 ms CreateObjectMapping: 0.527600 ms MarkObjects: 3.420400 ms  DeleteObjects: 0.329200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 263743.942329 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/JambiSheet.png
+  artifactKey: Guid(255841382d607e24a8317d9ab167f414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/JambiSheet.png using Guid(255841382d607e24a8317d9ab167f414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bcf7d4291183b8ee4e1ead522199d96') in 0.128084 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/RubySheet.png
+  artifactKey: Guid(c1dbff5bcb29cdd4bbb8de3a29f2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/RubySheet.png using Guid(c1dbff5bcb29cdd4bbb8de3a29f2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c6b0e39ab27998172a5a52ccc12020') in 0.111815 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.8 MB). Loaded Objects now: 6298.
+Memory consumption went from 108.6 MB to 107.8 MB.
+Total: 4.547600 ms (FindLiveObjects: 0.446800 ms CreateObjectMapping: 0.331800 ms MarkObjects: 3.505200 ms  DeleteObjects: 0.263100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16.713385 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/Octopussywalk1.png
+  artifactKey: Guid(3e30f58604105604b8501f4566219acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/Octopussywalk1.png using Guid(3e30f58604105604b8501f4566219acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a7fa640bf36fb7b8d580a71cd286cd') in 0.033733 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 75.374536 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle
+  artifactKey: Guid(35a3b0bab3655d349951af7bdee5bc4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle using Guid(35a3b0bab3655d349951af7bdee5bc4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d52edd1f3e23ca70b538c3c892e04d') in 0.008098 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.102253 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle1.png
+  artifactKey: Guid(59ab89cb0280254489644ac12d69c8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle1.png using Guid(59ab89cb0280254489644ac12d69c8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fbf16a1ff6ae5374a3fcf5804de2e0') in 0.032154 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle5.png
+  artifactKey: Guid(a9fc791244ee4204da5cf4b28e43890b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle5.png using Guid(a9fc791244ee4204da5cf4b28e43890b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af5a6b2a5b1baf84c541c6ac16375fd') in 0.024737 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle3.png
+  artifactKey: Guid(389e4c8e7bd6efe4685348af8c152123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Sprites/Characters/StarrenIdle/Starren_Idle3.png using Guid(389e4c8e7bd6efe4685348af8c152123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d6c8d559f0e67fde4f8a8d1103dea8') in 0.023519 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 18.560196 seconds.
+  path: Assets/2DBeginnerTutorialResources/Audio/Nekomancers - MAP.mp3
+  artifactKey: Guid(56379aadd10e27b40a6917a5005cf389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Audio/Nekomancers - MAP.mp3 using Guid(56379aadd10e27b40a6917a5005cf389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ef1060200145eefe4c361ea498846e') in 0.035857 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2560.972703 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_0.asset
+  artifactKey: Guid(6a0d220ec869a5d4594cb90de968a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_0.asset using Guid(6a0d220ec869a5d4594cb90de968a77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885117b78aba2f0252f02d3d9df81a54') in 0.028511 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_4.asset
+  artifactKey: Guid(03dd210f916d3fc4eb09d04dee242498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_4.asset using Guid(03dd210f916d3fc4eb09d04dee242498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9209acf8015218cc31ecc0e528180ae') in 0.022176 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_4.asset
+  artifactKey: Guid(92a61cc357eff0640a3a1ad04a29d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_4.asset using Guid(92a61cc357eff0640a3a1ad04a29d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea16a12770b8448cb1197219c7f8e48') in 0.018278 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_4.asset
+  artifactKey: Guid(3dbd789bf9800f743874b7e069090023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_4.asset using Guid(3dbd789bf9800f743874b7e069090023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b13feace7c0ef0d8a6a5d0552b955a') in 0.018110 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_2.asset
+  artifactKey: Guid(e2533c6df5fa7ba4386ad98565f074ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_2.asset using Guid(e2533c6df5fa7ba4386ad98565f074ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf86c9c545972fa60ab8a15729291dc4') in 0.013596 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_8.asset
+  artifactKey: Guid(ed642ae7391d1b143bf291cb75996dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_8.asset using Guid(ed642ae7391d1b143bf291cb75996dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666eccd6788cd4aadf20a4b82fd4f0ad') in 0.013215 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_6.asset
+  artifactKey: Guid(16b9e7c72835b7847803ffe9176da37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_6.asset using Guid(16b9e7c72835b7847803ffe9176da37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cd0afad11ca71c313859b0996e4482') in 0.010609 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_1.asset
+  artifactKey: Guid(a9bf06537545baf4bbe65be6f463e712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_1.asset using Guid(a9bf06537545baf4bbe65be6f463e712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01b5717e6b7c23c852104bc4735c002') in 0.017055 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_0.asset
+  artifactKey: Guid(672d644bebf6c36458e40968a61df337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_0.asset using Guid(672d644bebf6c36458e40968a61df337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cb1c9b45477ce083cd0c4c9d2bdb67') in 0.010863 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Square.asset
+  artifactKey: Guid(26f87b7ef7a8cbd4eaff0d2781ca7a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Square.asset using Guid(26f87b7ef7a8cbd4eaff0d2781ca7a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82118b15299e17c150310fb8871fe77c') in 0.014605 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_5.asset
+  artifactKey: Guid(2a7fc15840708d44e9c00e14b4d2214e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_5.asset using Guid(2a7fc15840708d44e9c00e14b4d2214e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8135ed0c856eb58787eb28c6c46b06') in 0.011368 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_3.asset
+  artifactKey: Guid(b1cc1fae263410540ad3383e2215051f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_3.asset using Guid(b1cc1fae263410540ad3383e2215051f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc767e5386f7363032fca0ff1262224') in 0.017945 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_0.asset
+  artifactKey: Guid(2260e231e2c4d6e4da21e1fb4847c01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_0.asset using Guid(2260e231e2c4d6e4da21e1fb4847c01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e4077d290f9c2ac62246b1df70e840') in 0.015394 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_7.asset
+  artifactKey: Guid(8b863dc358c43e547a618cdb43a48da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_7.asset using Guid(8b863dc358c43e547a618cdb43a48da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6d5edfbb2eeaf8132fd58f11612b10') in 0.016660 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Square.png
+  artifactKey: Guid(336dc71461b8dcf489b905aefc77789c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Square.png using Guid(336dc71461b8dcf489b905aefc77789c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24af55dbaa2f6df632e37d16bcb0ca06') in 0.026318 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_2.asset
+  artifactKey: Guid(f16a56d22e3980b459c31529043d5667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_2.asset using Guid(f16a56d22e3980b459c31529043d5667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a319303857e3128ffb2baade16028d2') in 0.011566 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_6.asset
+  artifactKey: Guid(814fc3915520e91438f7f5038b98f630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_6.asset using Guid(814fc3915520e91438f7f5038b98f630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e78832d36abb27e50142adf5c50237f') in 0.016031 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_8.asset
+  artifactKey: Guid(6e8b302cca6b3824da20d829dc6d9804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_8.asset using Guid(6e8b302cca6b3824da20d829dc6d9804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9258abddb557ce2b77dbc98d4e30ab48') in 0.012778 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_0.asset
+  artifactKey: Guid(a4811532b0daad849a93dbc72e76a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterRoundCorners_0.asset using Guid(a4811532b0daad849a93dbc72e76a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8556906c8724be36d5c299a0f4024e1b') in 0.013040 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Rectangular Palette.prefab
+  artifactKey: Guid(f7fd738ca70da0c4a847f5432c33f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Rectangular Palette.prefab using Guid(f7fd738ca70da0c4a847f5432c33f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1076dc04ff1940f47d6be7ece9ba516c') in 0.080832 seconds 
+Number of asset objects unloaded after import = 133
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_8.asset
+  artifactKey: Guid(cfad504942c66f345ab308d09f2ed2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorWaterSquareCorners_8.asset using Guid(cfad504942c66f345ab308d09f2ed2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b889c96373dbaf9a724138ba05a0edd') in 0.011749 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_4.asset
+  artifactKey: Guid(979ab79c36d5a7747a1e80cb8892eb99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_4.asset using Guid(979ab79c36d5a7747a1e80cb8892eb99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e1d2f209d939979896e5d080b50bba') in 0.011845 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_6.asset
+  artifactKey: Guid(e4758e1cb131015489743bd9543af812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_6.asset using Guid(e4758e1cb131015489743bd9543af812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846631a8570ea20a0905ce5f33f01d01') in 0.011416 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_0.asset
+  artifactKey: Guid(c2e46fd4dc1a638488c140fff2679baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksSquare_0.asset using Guid(c2e46fd4dc1a638488c140fff2679baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ac48b70b1f140fb4114342950eefa0') in 0.012606 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_2.asset
+  artifactKey: Guid(ccd5fa78f0a9e7e4cb74b373b77bf725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_2.asset using Guid(ccd5fa78f0a9e7e4cb74b373b77bf725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6569051e882659043a03caa5648de5a8') in 0.143174 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_1.asset
+  artifactKey: Guid(71423ed3b3ed86b49adf579e36ed8864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassCorner_1.asset using Guid(71423ed3b3ed86b49adf579e36ed8864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d8505c96432086746370934589558c') in 0.013658 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_7.asset
+  artifactKey: Guid(3305a34e50fcb794d89a35d0c8811fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorGrassToBricksCorner_7.asset using Guid(3305a34e50fcb794d89a35d0c8811fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b995019fa01c4afabbe71cf0c3ae28c') in 0.011949 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_8.asset
+  artifactKey: Guid(dc85ee648fb2d7e418b15bd13078dc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/FloorBricksToGrassSquare_8.asset using Guid(dc85ee648fb2d7e418b15bd13078dc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f78a88efc59ec60dd63e0d68e6d1046') in 0.013403 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.984996 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorBricksToGrassSquare.png
+  artifactKey: Guid(2e6ecdf01ba70e3489b17b3f6525fec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorBricksToGrassSquare.png using Guid(2e6ecdf01ba70e3489b17b3f6525fec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203f795f8d6cf9e422fa3eec7405a7c9') in 0.041701 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorGrassToBricksCorner.png
+  artifactKey: Guid(df0b6f9e93b65bc4792e6cf7849c5e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorGrassToBricksCorner.png using Guid(df0b6f9e93b65bc4792e6cf7849c5e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d457521e650f3cd6d526f46e353176') in 0.033595 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/Tile.png
+  artifactKey: Guid(17e824296fe81e5418f3d2e2013786fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/Tile.png using Guid(17e824296fe81e5418f3d2e2013786fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3260e80bc63b193dfff12a5aa97b3b06') in 0.024483 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorWaterSquareCorners.png
+  artifactKey: Guid(56dfe645f43c419458abb426118088e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/2DBeginnerTutorialResources/Art/Tiles/Sources/FloorWaterSquareCorners.png using Guid(56dfe645f43c419458abb426118088e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b25a6a312f423cb73f6da6fa323f83d') in 0.035759 seconds 
+Number of asset objects unloaded after import = 11
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

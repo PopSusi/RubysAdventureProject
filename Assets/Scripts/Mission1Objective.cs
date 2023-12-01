@@ -28,11 +28,10 @@ public class Mission1Objective : MonoBehaviour, ILevelManager
         objvText.text = enemyFixed.ToString() + " out of " + enemyTotal.ToString();
         if(enemyFixed == enemyTotal) FinishedObjective();
     }
-
+    
     public void FinishedObjective()
     {
-        Time.timeScale = 0;
         youWinUI.SetActive(true);
-        GameManager.instance.levelWin = true;
+        GameManager.instance.Win();
     }
 }

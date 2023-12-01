@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,12 @@ public class GameManager : MonoBehaviour
     public bool lostOpen = false;
 
     private ILevelManager levelManager;
+
+    [SerializeField] private AudioClip _LossSound;
+    public AudioClip WinSound;
+    public AudioSource audioSource;
+
+    public RubyController _ruby;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +32,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        audioSource = _ruby.GetComponent<AudioSource>();
     }
     
     public void Pause()
@@ -59,13 +66,21 @@ public class GameManager : MonoBehaviour
     {
         lostMenu.SetActive(true);
         lostOpen = true;
+        audioSource.PlayOneShot(_LossSound);
         Time.timeScale = 0;
-        AudioListener.pause = true;
         HealthBar.SetActive(false);
     }
 
     public void UpdateObjective()
     {
         levelManager.UpdateObjective();
+    }
+
+    public void Win()
+    {
+        levelWin = true;
+        audioSource.PlayOneShot(WinSound);
+        Time.timeScale = 0;
+        Debug.Log("aaaaaa");
     }
 }
