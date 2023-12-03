@@ -27,7 +27,7 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
     float bufferTimer;
 
     Animator animator;
-    public AudioSource audioSource;
+    public AudioSource audioSource;  
     public AudioClip hitClip;
     public AudioClip throwClip;
     public AudioSource footSource;
