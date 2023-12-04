@@ -41,25 +41,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshBuilderState.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\RotateAgentSmoothly.cs" />
      <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\RootSources2d.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshBuilder2d.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\AgentOverride2d.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshLink.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\AgentRotate2d.cs" />
      <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshAgentAttribute.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshExtension.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\RotateAgentInstantly.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshSurface.cs" />
      <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\AgentRotateSmooth2d.cs" />
      <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshAreaAttribute.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshExtensionsProvider.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\CollectSources2d.cs" />
-     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\CollectSourcesCache2d.cs" />
      <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshModifierTilemap.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\AgentOverride2d.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\CollectSourcesCache2d.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\CollectSources2d.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshBuilderState.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\RotateAgentSmoothly.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\RotateAgentInstantly.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshLink.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshExtensionsProvider.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshBuilder2d.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshExtension.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\AgentRotate2d.cs" />
+     <Compile Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
      <Folder Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts" />
      <None Include="Assets\NavMeshPlus-master\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
      <Reference Include="UnityEngine">
