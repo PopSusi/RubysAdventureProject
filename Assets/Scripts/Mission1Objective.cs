@@ -18,6 +18,8 @@ public class Mission1Objective : MonoBehaviour, ILevelManager
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         enemyTotal = enemies.Length;
+        enemies = GameObject.FindGameObjectsWithTag("Cat");
+        enemyTotal += enemies.Length;
         objvText = objvUI.GetComponent<TextMeshProUGUI>();
         objvText.text = enemyFixed.ToString() + " out of " + enemyTotal.ToString();
         youWinUI.SetActive(false);

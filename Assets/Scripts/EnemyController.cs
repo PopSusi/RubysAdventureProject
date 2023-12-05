@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour, IDamageable<int>
+public class EnemyController : MonoBehaviour, IEnemy
 {
     public static float speed {get;} = 1;
     [SerializeField] bool vertical;

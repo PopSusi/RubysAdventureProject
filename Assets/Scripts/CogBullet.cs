@@ -5,7 +5,10 @@ using UnityEngine;
 public class CogBullet : MonoBehaviour
 {
     Rigidbody2D rb2d;
+
+    private IEnemy enemy;
     // Start is called before the first frame update
+    
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -22,7 +25,7 @@ public class CogBullet : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D other){
-        EnemyController enemy = other.collider.GetComponent<EnemyController>();
+        enemy = other.collider.GetComponent<IEnemy>();
         if(enemy != null) enemy.HealthUpdate(-1); //Damage if Enemy
         Destroy(gameObject);
     }

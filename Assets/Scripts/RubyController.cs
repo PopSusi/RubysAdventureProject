@@ -27,11 +27,14 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
     float bufferTimer;
 
     Animator animator;
-    public AudioSource audioSource;  
+    public AudioSource audioSource;
+    public AudioClip chargedCog;
     public AudioClip hitClip;
     public AudioClip throwClip;
     public AudioSource footSource;
     Vector2 lookDirection = new Vector2(1,0);
+    private float chargeTime;
+    private bool charging;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -73,10 +76,12 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
             footSource.Stop();
         }
         
-        if(Input.GetKeyDown(KeyCode.C))
-        {
+        if(Input.GetKey(KeyCode.C) && chargeTime < .5) {
+                chargeTime += Time.deltaTime;
+                Debug.Log("charging");
+        }
+        if (Input.GetKeyUp(KeyCode.C)) {
             Launch();
-            PlaySound(throwClip);
         }
         if(Input.GetKeyDown(KeyCode.X))
         {
@@ -123,8 +128,7 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
             PlaySound(hitClip);
             Damage.Play();
         }
-        else if (amnt > 0)
-        {
+        else if (amnt > 0) {
             Instantiate(HealthHeart, rb2d.position + Vector2.up * 0.5f, Quaternion.identity);
             HealthHeart.Play();
         } 
@@ -133,16 +137,26 @@ public class RubyController : MonoBehaviour, IDamageable<int>, IKillable
         if (health <= 0) Dies(); //Kills if under 5
     }
 
-    public void Dies()
-    {
+    public void Dies() {
         GameManager.instance.Lost();
     }
     
     void Launch(){
+        charging = false;
         GameObject projectileObject = Instantiate(projectilePrefab,rb2d.position + Vector2.up * .5f, Quaternion.identity);
         
         CogBullet projectile = projectileObject.GetComponent<CogBullet>();
-        projectile.Launch(lookDirection, 300);
+        if (chargeTime < .5) {
+            PlaySound(throwClip);
+            projectile.Launch(lookDirection, 300);
+            Debug.Log("uncharged");
+        }
+        else {
+            projectile.Launch(lookDirection, 600);
+            PlaySound(chargedCog);
+            Debug.Log("charged");
+        }
+        chargeTime = 0;
         animator.SetTrigger("Launch");
     }
     public void PlaySound(AudioClip clip){
