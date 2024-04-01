@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c070771469cce953307fce1cff94a209d8829105ebe7e830e2eac0ee992bf228
-size 1334
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshPlus", "NavMeshPlus.csproj", "{93E6EBF1-547D-368B-6877-1B8038C2D612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F29219B7-15D5-2150-45F9-3E1115917E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshPlusEditor", "NavMeshPlusEditor.csproj", "{9C3C7BDE-E2C0-1094-4C7E-24327C83FC2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93E6EBF1-547D-368B-6877-1B8038C2D612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E6EBF1-547D-368B-6877-1B8038C2D612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E6EBF1-547D-368B-6877-1B8038C2D612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E6EBF1-547D-368B-6877-1B8038C2D612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29219B7-15D5-2150-45F9-3E1115917E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29219B7-15D5-2150-45F9-3E1115917E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29219B7-15D5-2150-45F9-3E1115917E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29219B7-15D5-2150-45F9-3E1115917E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3C7BDE-E2C0-1094-4C7E-24327C83FC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3C7BDE-E2C0-1094-4C7E-24327C83FC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3C7BDE-E2C0-1094-4C7E-24327C83FC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3C7BDE-E2C0-1094-4C7E-24327C83FC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
